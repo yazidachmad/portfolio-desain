@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 72px;
+    position: fixed;
+    width: 100%;
+}
+
+.brand {
+    display: flex;
+    justify-content: center;
+    flex-shrink: 0;  
+    align-items: center;
+    gap: 20px;
+}
+nav {
+    font-size: 17px;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    display: flex;
+    gap: 23px;
+    color: #D7D7D7;
+    
+}
+
+nav a {
+    color: #D7D7D7;
+}
+
+.brand span {
+    font-size: 20px;
+}
+.hero {
+    background-image: linear-gradient(96deg, #D7D7D7 50%,  #000 50%);
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 70px;
+    padding-top: 90px;
+    align-items: center;
+
+}
+.hero image {
+    width: 100%;
+    object-fit: cover;
+    object-position: 85%;
+}
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.hero-text h1 {
+    color: #000;
+    text-align: center;
+    font-family:"releway";
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    /* mix-blend-mode: difference; */
+}
+.hero-text p {
+    color: #909090;
+    text-align: center;
+    font-family:"releway";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+.hero-text span {
+    color: #000;
+    text-align: center;
+    font-family:"releway";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.button-box {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.button-box a {
+    padding: 23px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    transition: all 0.2s ease-in-out;
+}
+
+.button-box a svg {
+    width: 25px;
+    height: 28px;
+    background: #C4C4C4;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    padding-top: 150px;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(26, 21, 21, 0.00) 0%, rgba(1, 1, 1, 0.16) 100%), #FFF;
+}
+h2 {
+    border: 2px solid black;
+    padding: 10px 16px;
+}
+.about-me p {
+    color: #050505;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 138.682%; /* 20.802px */
+}
+
+
+
