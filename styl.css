@@ -4,7 +4,6 @@
     box-sizing: border-box;
     text-decoration: none;
 }
-
 header {
     display: flex;
     justify-content: space-between;
@@ -116,11 +115,13 @@ nav a {
     justify-content: center;
     gap: 80px;
     padding-top: 150px;
+    padding: 80px;
     background: radial-gradient(50% 50% at 50% 50%, rgba(26, 21, 21, 0.00) 0%, rgba(1, 1, 1, 0.16) 100%), #FFF;
 }
-h2 {
+h2.h2-about-me {
     border: 2px solid black;
     padding: 10px 16px;
+    border-radius: 3px;
 }
 .about-me p {
     color: #050505;
@@ -132,5 +133,414 @@ h2 {
     line-height: 138.682%; /* 20.802px */
 }
 
+.about-me-boxes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
 
+.box {
+    display: flex;
+    flex-direction: column;
+}
+
+.img-container{
+    display: flex;
+    height: 5rem;
+    align-items: center;
+}
+
+.img-container img {
+    position: absolute;
+}
+.img-container h2{
+    position: relative;
+    top: 20px;
+    left: 30px;
+}
+
+.atas {
+    display: flex;
+}
+
+.bawah {
+    display: flex;
+    align-items: center;
+    width: 20rem;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    padding-top: 150px;
+    padding: 80px;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(26, 21, 21, 0.00) 0%, rgba(1, 1, 1, 0.16) 100%), #FFF;
+    border-radius: 3px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    gap: 20px;
+    text-align: center;
+}
+
+.grid-skil img{
+    width: 5rem;
+    height: 5rem;
+}
+.grid-skil-3 img{
+    width: 5rem;
+    height: 5rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding-top: 200px;
+    padding: 88px;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(26, 21, 21, 0.00) 0%, rgba(1, 1, 1, 0.16) 100%), #FFF;
+}
+.content h2 {
+    border: 2px solid black;
+    padding: 10px 20px;
+    border-radius: 3px;
+}
+.content p {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 48px;
+    font-size: medium;
+    height: 20px;
+    width: 74%;
+}
+
+.contact-buttons {
+    display: flex;
+    border: 2px solid black;
+    padding: 7px 27px;
+    border-radius: 8px;
+    
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #1d1818;
+    color: #D7D7D7;
+    padding: 5%;
+    box-shadow: 0px 4px 4px 0px rgb(63, 57, 57);
+}
+footer h4 {
+    color: #FFF;
+}
+.button {
+    background-color: #1d1818;
+    padding: 2px 20px;
+    border-left: 5px solid black;
+    border-bottom: 5px solid black;
+
+}
+.portfolio .banner {
+    background-image: url(asset/image\ 12.png);
+    gap: 20px;
+    padding-top: 150px;
+    padding: 80px;
+    background-size: cover;
+    background-position: center;
+}
+
+.text-blank {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(65, 62, 62);
+}
+
+.a-link {
+    margin-right: 60px;
+    border-bottom: 2px solid rgb(195, 187, 187);
+    padding: 4px;
+    gap: 10px;
+}
+
+.text-blank a {
+    color: #9c9595;
+    
+}
+.portfolios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    color: white;
+}
+.item-1 {
+    background-image: url(asset/Project.png);
+}
+.item-2 {
+    background-image: url(asset/Project\ \(1\).png);
+}
+.item-3 {
+    background-image: url(asset/img-123.jpeg);
+}
+.item-4 {
+    background-image: url(asset/img-123.jpeg);
+}
+.item-5 {
+    background-image: url(asset/Project.png);
+}
+.item-6 {
+    background-image: url(asset/Project\ \(1\).png);
+}
+.portfolio-item {
+
+    background-position: center;
+}
+.info {
+    padding: 100px 50px;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.50);
+    transition: all 0.3s ease-in-out;
+}
+.info span {
+    padding: 10px;
+    gap: 20px;
+}
+.portfolio-item:hover > .info {
+    opacity: 1;
+}
+
+.portfolio-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1d1818;
+    padding: 10px;
+    color: #FFF;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+form > :is(input, textarea) {
+    border: none;
+    background-color: transparent;
+    border-left: 5px solid black;
+    border-bottom: 5px solid black;
+    padding: 14px;
+    width: 80%;
+}
+
+@media (max-width: 500px) {
+    header {
+        padding: 10px 20px;
+        flex-direction: column;
+    }
+
+    .brand {
+        gap: 10px;
+    }
+
+    nav {
+        font-size: 14px;
+        gap: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero {
+        flex-direction: column;
+        gap: 20px;
+        padding-top: 60px;
+        padding: 20px;
+    }
+
+    .hero-text h1 {
+        font-size: 36px;
+    }
+
+    .hero-text p {
+        font-size: 18px;
+    }
+
+    .hero-text span {
+        font-size: 30px;
+    }
+
+    .button-box a {
+        padding: 15px;
+    }
+
+    .about-me {
+        padding: 40px 20px;
+        gap: 40px;
+    }
+
+    h2.h2-about-me {
+        font-size: 18px;
+        padding: 8px 12px;
+    }
+
+    .about-me p {
+        font-size: 14px;
+    }
+    @media (max-width: 500px) {
+        .img-container {
+            flex-direction: column;
+            height: auto;
+            text-align: center;
+        }
+    
+        .img-container img {
+            position: relative;
+            width: 50%;
+            height: auto;
+            margin: 0 auto;
+        }
+    
+        .img-container h2 {
+            position: relative;
+            top: 0;
+            left: 0;
+            margin-top: 10px;
+            font-size: 1.5rem;
+        }
+    
+        .atas, .bawah {
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+    
+        .skills {
+            padding: 40px 20px;
+            gap: 40px;
+        }
+    
+        .grid-container {
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+    
+        .grid-skil img, .grid-skil-3 img {
+            width: 3rem;
+            height: 3rem;
+        }
+    
+        .content {
+            padding: 40px 20px;
+            gap: 20px;
+        }
+    
+        .content h2 {
+            font-size: 1.2rem;
+            padding: 6px 9px;
+        }
+    
+        .content p {
+            font-size: 0.9rem;
+            padding: 24px;
+            width: 90%;
+        }
+        .contact-buttons {
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+        }
+        
+        footer {
+            padding: 10%;
+            text-align: center;
+        }
+        
+        .button {
+            padding: 5px 15px;
+        }
+        
+        .portfolio .banner {
+            padding: 40px 20px;
+            gap: 10px;
+            background-size: contain;
+        }
+        
+        .text-blank {
+            padding: 10px;
+            font-size: 0.9rem;
+            flex-direction: column;
+        }
+        
+        .a-link {
+            margin: 0;
+            padding: 5px;
+            font-size: 0.9rem;
+        }
+        
+        .portfolios {
+            grid-template-columns: 1fr;
+            gap: 20px;
+            padding: 20px;
+        }
+        
+        .portfolio-item {
+            background-size: cover;
+            height: 200px;
+        }
+        
+        .info {
+            padding: 40px 20px;
+            font-size: 0.8rem;
+        }
+        
+        .info span {
+            padding: 5px;
+        }
+    }
+    .portfolio-item:hover > .info {
+        opacity: 1;
+    }
+    
+    .portfolio-text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #1d1818;
+        padding: 10px;
+        color: #FFF;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+    }
+    
+    form > :is(input, textarea) {
+        border: none;
+        background-color: transparent;
+        border-left: 5px solid black;
+        border-bottom: 5px solid black;
+        padding: 14px;
+        width: 80%;
+    }
+}
+    
 

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="stylesheet" href="styl.css">
+    <link rel="stylesheet" href="styl.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
@@ -48,13 +48,13 @@
       </nav>
     </header>
     <!-- HERO -->
-    <section class="hero">
+    <section class="hero" id="hero">
       <div class="hero-image">
-        <img src="asset/person.png" alt="Yazid's Photo">
+        <img src="asset/person.png" alt="Yazid's Photo" />
       </div>
       <div class="hero-text">
         <span>Hi, I'm</span>
-        <h1>Yazid Achmad </h1>
+        <h1>Yazid Achmad</h1>
         <p>Software Developer</p>
         <div class="button-box">
           <a href="https://www.linkedin.com/feed/" class="hero-btn">
@@ -167,7 +167,7 @@
     </section>
     <!-- about-me -->
     <section class="about-me" id="about-me">
-      <h2>ABOUT ME</h2>
+      <h2 class="h2-about-me">ABOUT ME</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Error commodi
         corporis eum? Omnis, accusantium sapiente, harum velit tempore provident
@@ -176,38 +176,48 @@
       <button>EXPLORE</button>
       <img src="asset/separatorBlack 1.png" alt="" />
       <div class="about-me-boxes">
-        <div class="box">
-          <img src="asset/img1.png" alt="" />
-          <h2>DESIGN</h2>
-          <p>
-            I can design the site based on your needs and suggestions. I can
-            also design the site from scratch and consult you during the job.
-          </p>
+        <div class="atas">
+          <div class="box">
+            <div class="img-container">
+              <img src="asset/136378-200 1.png" alt="" />
+              <h2>DESIGN</h2>
+            </div>
+            <p>
+              I can design the site based on your needs and suggestions. I can
+              also design the site from scratch and consult you during the job.
+            </p>
+          </div>
+          <div class="box">
+            <div class="img-container">
+              <img src="asset/maintenance--v3 1.png" alt="" />
+              <h2>DEVELOPMENT</h2>
+            </div>
+            <p>
+              I can design the site based on your needs and suggestions. I can
+              also design the site from scratch and consult you during the job.
+            </p>
+          </div>
         </div>
-        <div class="box">
-          <img src="asset/img2.png" alt="" />
-          <h2>DEVELOPMENT</h2>
-          <p>
-            I can design the site based on your needs and suggestions. I can
-            also design the site from scratch and consult you during the job.
-          </p>
+        <div class="bawah">
+          <div class="box">
+            <div class="img-container">
+              <img src="asset/img_533288 1.png" alt="" />
+              <h2>MAINTENANCE</h2>
+            </div>
+            <p>
+              I can design the site based on your needs and suggestions. I can
+              also design the site from scratch and consult you during the job.
+            </p>
+          </div>
         </div>
-        <div class="box">
-          <img src="asset/img3.png" alt="" />
-          <h2>MAINTENANCE</h2>
-          <p>
-            I can design the site based on your needs and suggestions. I can
-            also design the site from scratch and consult you during the job.
-          </p>
-        </div>
-        <img src="asset/separatorBlack 1.png" alt="" />
       </div>
+      <img src="asset/separatorBlack 1.png" alt="" />
     </section>
     <section class="skills" id="skills">
-      <h2>SKILLS</h2>
+      <h2 class="h2-about-me">SKILLS</h2>
       <h3>USING NOW:</h3>
       <div class="grid-container">
-        <div class="grid-skil-1">
+        <div class="grid-skil">
           <img src="asset/html.svg" alt="" />
           <p>HTML5</p>
         </div>
@@ -280,18 +290,13 @@
       </div>
     </section>
     <section class="portfolio" id="portfolio">
-      <h2>PORTFOLIO</h2>
-      <div>
-        <a href="ALL">ALL</a>
-        <a href="CODED">CODED</a>
-        <a href="DESIGNED">DESIGNED</a>
-      </div>
+      <div class="banner"></div>
       <div class="portfolios">
         <!-- ITEM 1 -->
-        <div class="portfolio-item">
+        <div class="portfolio-item item-1">
           <div class="info">
-            <span>coded, designed</span>
-            <h4>eatsome.</h4>
+            <span>Coded, Designed</span>
+            <h4>Eatsome.</h4>
             <p>restaurant browsing in React.js (usign Yelp API)</p>
             <div>
               <a href="#">DEMO</a>
@@ -300,9 +305,9 @@
           </div>
         </div>
         <!-- ITEM 2 -->
-        <div class="portfolio-item">
+        <div class="portfolio-item item-2">
           <div class="info">
-            <span>coded, designed</span>
+            <span>Coded, Designed</span>
             <h4>eatsome.</h4>
             <p>restaurant browsing in React.js (usign Yelp API)</p>
             <div>
@@ -312,7 +317,7 @@
           </div>
         </div>
         <!-- ITEM 3 -->
-        <div class="portfolio-item">
+        <div class="portfolio-item item-3">
           <div class="info">
             <span>coded, designed</span>
             <h4>eatsome.</h4>
@@ -324,7 +329,7 @@
           </div>
         </div>
         <!-- ITEM 4 -->
-        <div class="portfolio-item">
+        <div class="portfolio-item item-4">
           <div class="info">
             <span>coded, designed</span>
             <h4>eatsome.</h4>
@@ -336,7 +341,7 @@
           </div>
         </div>
         <!-- ITEM 5 -->
-        <div class="portfolio-item">
+        <div class="portfolio-item item-5">
           <div class="info">
             <span>coded, designed</span>
             <h4>eatsome.</h4>
@@ -348,7 +353,7 @@
           </div>
         </div>
         <!-- ITEM 6 -->
-        <div class="portfolio-item">
+        <div class="portfolio-item item-6">
           <div class="info">
             <span>coded, designed</span>
             <h4>eatsome.</h4>
@@ -365,7 +370,7 @@
       </div>
     </section>
     <section class="content" id="content">
-      <h2>CONTENT</h2>
+      <h2 class="h2-content">CONTENT</h2>
       <p>
         Nulla in velit a metus rhoncus tempus. Nulla congue nulla vel sem varius
         finibus. Sed ornare sit amet lorem sed viverra. In vel urna quis libero
@@ -406,25 +411,27 @@
       </form>
     </section>
     <footer>
-      <button class="button">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="15"
-          height="15"
-          viewBox="0 0 15 15"
-          fill="none"
-        >
-          <path
-            d="M3.12497 5.3125V8.125L7.49997 5L11.875 8.125V5.3125L7.49997 2.1875L3.12497 5.3125Z"
-            fill="white"
-          />
-          <path
-            d="M3.12497 9.6875V12.5L7.49997 9.375L11.875 12.5V9.6875L7.49997 6.5625L3.12497 9.6875Z"
-            fill="white"
-          />
-        </svg>
-        <h4>BACK TO TOP</h4>
-      </button>
+      <a href="#home">
+        <button class="button">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="15"
+            height="15"
+            viewBox="0 0 15 15"
+            fill="none"
+          >
+            <path
+              d="M3.12497 5.3125V8.125L7.49997 5L11.875 8.125V5.3125L7.49997 2.1875L3.12497 5.3125Z"
+              fill="white"
+            />
+            <path
+              d="M3.12497 9.6875V12.5L7.49997 9.375L11.875 12.5V9.6875L7.49997 6.5625L3.12497 9.6875Z"
+              fill="white"
+            />
+          </svg>
+          <h4>BACK TO TOP</h4>
+        </button>
+      </a>
       <div class="button-box">
         <a href="https://www.linkedin.com/feed/" class="hero-btn">
           <svg
@@ -533,7 +540,7 @@
         </a>
       </div>
       <div class="copy">
-        <p>@yazid achmad-11 All Rights Reserved.</p>
+        <p>@2024 yazid achmad-11 All Rights Reserved.</p>
       </div>
     </footer>
   </body>
